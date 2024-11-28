@@ -1,0 +1,134 @@
+.cart-modal {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.cart-content {
+  left: 0;
+  bottom: 0px;
+  background: #f5f5f5 !important;
+  width: 100%;
+  border: 1px solid #494747;
+  border-radius: 20px 20px 0px 0px;
+  overflow-x: hidden !important;
+  position: absolute;
+  max-height: 90%;
+  overflow-y: auto;
+  z-index: 1000;
+}
+.cart-content::-webkit-scrollbar {
+  display: none;
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 100;
+  font-size: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+  width: 20px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.4s ease;
+  opacity: 0;
+  &:hover {
+    rotate: 150deg;
+  }
+}
+.cart-modal:hover .close-btn {
+  opacity: 1;
+}
+.cart-image-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.product-image {
+  width: 100%;
+  border-radius: 0px 0px 0px 0px;
+  height: 350px !important;
+  object-fit: cover;
+}
+
+.slide-btn {
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  position: absolute;
+  color: #333;
+}
+
+.product-info {
+  padding: 20px;
+  text-align: start;
+}
+
+.product-title {
+  font-size: 20px;
+}
+
+.product-price {
+  /* border-top: 1px solid #ddd; */
+  padding-top: 10px;
+
+  font-size: 18px;
+  color: #333;
+  margin: 10px 0;
+}
+
+.product-description {
+  color: #494747;
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+  margin-top: 10px;
+  font-weight: 100;
+  font-size: medium;
+}
+
+.add-to-cart {
+  background-color: #141212;
+  color: #fff;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+  font-weight: bolder;
+  &:hover {
+    background-color: #000;
+  }
+  &:active {
+    transform: scale(0.99);
+  }
+}
+
+.prd-description {
+  max-height: 70px;
+  overflow: scroll;
+}
+.prd-description::-webkit-scrollbar {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .close-btn {
+    opacity: 1;
+  }
+}
