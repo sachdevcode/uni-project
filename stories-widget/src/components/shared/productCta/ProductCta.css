@@ -1,0 +1,53 @@
+.product-cta {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 8px !important;
+  backdrop-filter: blur(15px);
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: space-between;
+}
+.product-cta-img {
+  width: 50px !important;
+  height: 50px !important;
+  border-radius: 4px;
+  border: 1px solid rgb(48, 46, 46) !important;
+}
+.product-cta-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  position: relative;
+  align-items: start;
+  width: 50%;
+}
+.product-cta-btn {
+  width: 100%;
+  font-weight: bolder;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  border-radius: 8px;
+  max-width: 100px;
+  /* border: none !important; */
+  /* box-shadow: 0px 0px 5px 0px rgba(212, 198, 198, 0.75); */
+  border: 1px solid rgb(48, 46, 46) !important;
+
+  &:active {
+    transform: scale(0.95);
+  }
+}
+.swiper-horizontal
+  > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic,
+.swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+  position: fixed !important;
+}
+.swiper-horizontal
+  > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic
+  .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic
+  .swiper-pagination-bullet {
+  background-color: white;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75) !important;
+}
